@@ -65,5 +65,5 @@ CONV層包含zero-padding、convolution、ReLU三種計算。各別實作方式�
 
 ### 定點浮點數運算:
 這部分我並不太確定，但就實作結果而言我是正確的。此浮點數定義為4-bit整數、16-bit小數，若兩個這樣的浮點數相乘，則變成8-bit整數、32-bit小數，如下圖:</bt>
-![](https://i.imgur.com/BGGuaNR.png) <>
+![](https://i.imgur.com/BGGuaNR.png) </br>
 由於定點數的關係，取值時，直接擷取
