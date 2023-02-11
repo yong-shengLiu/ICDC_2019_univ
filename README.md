@@ -67,3 +67,7 @@ CONV層包含zero-padding、convolution、ReLU三種計算。各別實作方式�
 這部分我並不太確定，但就實作結果而言我是正確的。此浮點數定義為4-bit整數、16-bit小數，若兩個這樣的浮點數相乘，則變成8-bit整數、32-bit小數，如下圖:</br>
 ![](https://i.imgur.com/BGGuaNR.png) </br>
 由於定點數的關係，取值時，直接擷取
+
+### 加上bias和小數點四捨五入
+如下圖，9個kernal map各別相乘累加的結果為40-bit(feature output)，而bias因為定點數的關係需要調整bitwise相加的位置。小數點四捨五入則是再bias LSB後一位加1，再擷取就是四捨五入的效果。</br>
+![](https://i.imgur.com/QvvFb7F.png)
