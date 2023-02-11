@@ -61,7 +61,7 @@ always @(*) begin
 	case (current_state)
 		IDLE:     next_state = (ready)? INPUT_F : IDLE;
 		INPUT_F:  next_state = (counter == 4'd12)? WRITE_L0 : INPUT_F;
-		WRITE_L0: next_state = ({index_MSB, index_LSB} == 12'd4096)? READ_L0 : INPUT_F;
+		WRITE_L0: next_state = ({index_MSB, index_LSB} == 12'd0)? READ_L0 : INPUT_F;
 		READ_L0:  next_state = (counter == 4'd5)? WRITE_L1 : READ_L0;
 		WRITE_L1: next_state = ({index_MSB, index_LSB} == 12'd0)? IDLE : READ_L0;
 		default:  next_state = IDLE;
