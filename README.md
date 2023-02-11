@@ -69,5 +69,5 @@ CONV層包含zero-padding、convolution、ReLU三種計算。各別實作方式�
 由於定點數的關係，取值時，直接擷取
 
 ### 加上bias和小數點四捨五入
-如下圖，9個kernal map各別相乘累加的結果為40-bit(feature output)，而bias因為定點數的關係需要調整bitwise相加的位置。小數點四捨五入則是再bias LSB後一位加1，再擷取就是四捨五入的效果。</br>
+如下圖，9個kernal map各別相乘累加的結果為40-bit(feature output)，而bias因為定點數的關係需要調整bitwise相加的位置。小數點四捨五入則是再bias LSB後一位加1，再擷取就是四捨五入的效果，這原理的中心概念是小數點binary加1，相當於十進位加0.5。</br>
 ![](https://i.imgur.com/QvvFb7F.png)
