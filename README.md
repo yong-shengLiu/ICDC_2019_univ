@@ -63,3 +63,7 @@ CONV層包含zero-padding、convolution、ReLU三種計算。各別實作方式�
 ![](https://i.imgur.com/tBzNtFG.png)
 將index 12-bit拆成高位6-bit、低位6-bit。如上方例子，如果高位6-bit加一，則表示index加64，也就是index向下位移一個row，相當於上方`index row*64`的計算，這個高位元組加1的動作，就取代乘法運算。
 
+### 定點浮點數運算:
+這部分我並不太確定，但就實作結果而言我是正確的。此浮點數定義為4-bit整數、16-bit小數，若兩個這樣的浮點數相乘，則變成8-bit整數、32-bit小數，如下圖:</bt>
+![](https://i.imgur.com/BGGuaNR.png)
+由於定點數的關係，取值時，直接擷取
