@@ -1,0 +1,16 @@
+FTP帳號(FTP account): ??????
+
+通過gate-level simulation之cell area report: 24672
+通過gate-level simulatoin之clock cycle time (ns): 27
+
+--- RTL category---
+使用之HDL模擬器名稱(HDL simulator ): nc-verilog 
+RTL檔案名稱(RTL filename):          CON.v
+
+--- Pre-layout gate-level ---
+gate-level檔案名稱(gate_level filename):   CONV_syn.v
+gate-level sdf filename:                  CONV_syn.sdf
+design compiler合成資料庫(dc library):     CONV_syn.ddc
+
+-----注意事項(annotation)--------------------------------------------------------
+無
