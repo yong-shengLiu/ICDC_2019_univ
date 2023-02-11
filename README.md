@@ -1,4 +1,4 @@
-2019 IC Design Constest Preliminary
+2019 IC Design Contest Preliminary
 <font color="#f00">大學部</font> 標準元件數位電路設計
 <font color="#0f0">Image Convolutional Circuit Design</font>
 ===
