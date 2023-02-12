@@ -16,7 +16,7 @@
 |-----|---|
 |IDLE|reset後進入, 等待啟動訊號|
 |INPUT_F|重複9個clk，從cnn_sti.dat讀入3*3大小的feature input data，並做一個乘法運算|
-|WRITE_L0|將計算為的資料存到MEM_L0中|
+|WRITE_L0|將計算後的資料存到MEM_L0中|
 |READ_L0|重複4個clk，從MEM_L0讀取CONV的結果, 同時進行比大小的運算|
 |WRITE_L1|將最大值寫入MEM_L1中|
 
